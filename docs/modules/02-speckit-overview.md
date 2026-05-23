@@ -37,38 +37,19 @@ Spec-kit is a **structured AI-powered workflow** for GitHub Copilot that bridges
 
 The Spec-kit workflow follows a linear progression with feedback loops:
 
-```
-Feature Idea
-    │
-    ▼
-┌──────────────────┐
-│  /speckit.specify │ ──→ spec.md
-└──────────────────┘
-    │
-    ▼
-┌──────────────────┐
-│  /speckit.clarify │ ──→ Refined spec.md
-└──────────────────┘
-    │
-    ▼
-┌──────────────────┐
-│  /speckit.plan    │ ──→ plan.md + data-model.md + contracts/
-└──────────────────┘
-    │
-    ▼
-┌──────────────────┐
-│  /speckit.tasks   │ ──→ tasks.md (dependency-ordered)
-└──────────────────┘
-    │
-    ▼
-┌──────────────────┐
-│  /speckit.implement│ ──→ Source code (all files)
-└──────────────────┘
-    │
-    ▼
-┌──────────────────┐
-│  /speckit.analyze │ ──→ Validation report
-└──────────────────┘
+```mermaid
+%%{init: {'theme': 'default', 'themeVariables': {'fontSize': '12px'}}}%%
+flowchart TD
+    A["Feature Idea"] --> B["/speckit.specify"]
+    B -->|"spec.md"| C["/speckit.clarify"]
+    C -->|"Refined spec.md"| D["/speckit.plan"]
+    D -->|"plan.md + data-model.md + contracts/"| E["/speckit.tasks"]
+    E -->|"tasks.md (dependency-ordered)"| F["/speckit.implement"]
+    F -->|"Source code (all files)"| G["/speckit.analyze"]
+    G -->|"Validation report"| H["Done ✓"]
+
+    style A fill:#FF9800,color:#fff
+    style H fill:#4CAF50,color:#fff
 ```
 
 ## 2.3 Artifact Structure
@@ -136,4 +117,4 @@ Before proceeding to Module 3:
 
 ---
 
-[← Prerequisites]({{ site.baseurl }}{% link modules/01-prerequisites.md %}) | [Next: Specification →]({{ site.baseurl }}{% link modules/03-specification.md %})
+[← Prerequisites](/Overview-Github-Spec-kit/modules/01-prerequisites/) | [Next: Specification →](/Overview-Github-Spec-kit/modules/03-specification/)
