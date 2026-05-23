@@ -28,6 +28,7 @@ Unlike ad-hoc prompting or unstructured code generation, Spec-kit enforces a dis
 The following diagram illustrates the end-to-end Spec-kit pipeline — from a natural language feature idea through to validated production code:
 
 ```mermaid
+%%{init: {'theme': 'default', 'themeVariables': {'fontSize': '12px'}}}%%
 flowchart LR
     A[Feature Idea] --> B["/speckit.specify"]
     B --> C["/speckit.clarify"]
