@@ -17,35 +17,43 @@ Accelerate software development with **AI-powered specification and implementati
 
 ---
 
-## What is Spec-kit?
+## What You'll Build
 
-Spec-kit is a **structured AI-powered development workflow** that integrates directly into VS Code through GitHub Copilot Agent Mode. It provides a repeatable, governance-aware pipeline that transforms a simple natural language feature description into a fully implemented, production-ready codebase — complete with backend services, frontend interfaces, infrastructure scripts, and automated tests.
+A complete **Azure Cost Monitoring Tool** using the Spec-kit workflow, demonstrating:
 
-Unlike ad-hoc prompting or unstructured code generation, Spec-kit enforces a disciplined progression through discrete stages: specification, clarification, planning, task decomposition, implementation, and analysis. Each stage produces traceable artifacts that serve as inputs for the next, ensuring architectural consistency, requirement coverage, and cross-artifact integrity throughout the entire software development lifecycle.
+- **Feature Specification** — Transform a natural language description into a structured spec
+- **Automated Planning** — Generate architecture, data models, API contracts, and implementation plans
+- **Task Decomposition** — Break down complex features into dependency-ordered, executable tasks
+- **AI-Powered Implementation** — Execute all 88 tasks automatically with GitHub Copilot
+- **Quality Analysis** — Validate consistency across all generated artifacts
+
+---
 
 ## Spec-kit Workflow
 
 The following diagram illustrates the end-to-end Spec-kit pipeline — from a natural language feature idea through to validated production code:
 
 ```mermaid
-%%{init: {'theme': 'default', 'themeVariables': {'fontSize': '12px'}}}%%
-flowchart LR
-    A[Feature Idea] --> B["/speckit.specify"]
+%%{init: {'theme': 'default', 'themeVariables': {'fontSize': '14px'}}}%%
+flowchart TD
+    A["🟢 Feature Idea"]:::start --> B["/speckit.specify"]
     B --> C["/speckit.clarify"]
     C --> D["/speckit.plan"]
     D --> E["/speckit.tasks"]
     E --> F["/speckit.implement"]
     F --> G["/speckit.analyze"]
+    G --> H["✅ Done"]:::done
 
-    B -->|spec.md| C
-    C -->|Refined spec.md| D
-    D -->|plan.md\ndata-model.md\ncontracts/| E
-    E -->|tasks.md| F
-    F -->|Source Code| G
-    G -->|Validation Report| H[Done ✓]
+    B -..->|"spec.md"| B1["Feature Specification"]:::artifact
+    C -..->|"Refined spec"| C1["Resolved Ambiguities"]:::artifact
+    D -..->|"plan.md + data-model.md"| D1["Architecture & Contracts"]:::artifact
+    E -..->|"tasks.md"| E1["88 Ordered Tasks"]:::artifact
+    F -..->|"60+ files"| F1["Production Code"]:::artifact
+    G -..->|"report"| G1["Validation Report"]:::artifact
 
-    style A fill:#4CAF50,color:#fff
-    style H fill:#2196F3,color:#fff
+    classDef start fill:#4CAF50,color:#fff,font-weight:bold
+    classDef done fill:#2196F3,color:#fff,font-weight:bold
+    classDef artifact fill:#FFF3E0,stroke:#FF9800,color:#333
 ```
 
 | Stage | Command | Output Artifact |
@@ -58,16 +66,6 @@ flowchart LR
 | Analyze | `/speckit.analyze` | Cross-artifact consistency report |
 
 ---
-
-## What You'll Build
-
-A complete **Azure Cost Monitoring Tool** using the Spec-kit workflow, demonstrating:
-
-- **Feature Specification** — Transform a natural language description into a structured spec
-- **Automated Planning** — Generate architecture, data models, API contracts, and implementation plans
-- **Task Decomposition** — Break down complex features into dependency-ordered, executable tasks
-- **AI-Powered Implementation** — Execute all 88 tasks automatically with GitHub Copilot
-- **Quality Analysis** — Validate consistency across all generated artifacts
 
 ## Architecture at a Glance
 
