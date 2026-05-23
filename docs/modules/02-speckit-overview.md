@@ -52,7 +52,27 @@ flowchart TD
     style H fill:#4CAF50,color:#fff
 ```
 
-## 2.3 Artifact Structure
+## 2.3 Traditional Vibe Coding vs. Spec-kit
+
+| Aspect | Traditional Vibe Coding | GitHub Spec-kit |
+|---|---|---|
+| **Approach** | Ad-hoc prompting, trial and error | Structured 6-stage pipeline |
+| **Planning** | Minimal — start coding immediately | Architecture, data model, API contracts generated first |
+| **Consistency** | Results vary with each prompt | Repeatable, governed by constitution |
+| **Traceability** | No link between requirements and code | Every line traces to a specification requirement |
+| **Governance** | None — no guardrails | Constitution enforces principles automatically |
+| **Scalability** | Works for small scripts (~100 lines) | Handles 88+ tasks, 60+ files, 8,000+ lines |
+| **Quality assurance** | Manual review only | Automated cross-artifact consistency analysis |
+| **Architecture drift** | Common — design degrades over time | Prevented — plan validates against constitution |
+| **Documentation** | Written after the fact (if at all) | Generated as a byproduct of the workflow |
+| **Collaboration** | Hard to share context between sessions | Spec artifacts persist and can be resumed |
+| **Error handling** | Fix issues as they appear | Dependencies resolved before implementation starts |
+| **Refactoring** | Frequent rework due to poor planning | Minimal — architecture decided upfront |
+
+{: .tip }
+> Vibe coding is great for quick prototypes and experiments. Spec-kit is designed for **production-quality projects** where consistency, traceability, and governance matter.
+
+## 2.4 Artifact Structure
 
 All Spec-kit artifacts are stored in a `specs/` directory within your project:
 
@@ -72,7 +92,7 @@ specs/001-feature-name/
     └── security.md
 ```
 
-## 2.4 Constitution
+## 2.5 Constitution
 
 The **constitution** is a project-wide governance document (`.specify/memory/constitution.md`) that defines architectural principles enforced across all Spec-kit commands. Examples include:
 
@@ -84,7 +104,7 @@ The **constitution** is a project-wide governance document (`.specify/memory/con
 {: .important }
 > The constitution is checked at the start of every Spec-kit command. Violations halt execution and require explicit justification.
 
-## 2.5 Git Integration
+## 2.6 Git Integration
 
 Spec-kit includes optional Git workflow commands:
 
@@ -95,7 +115,7 @@ Spec-kit includes optional Git workflow commands:
 | `/speckit.git.commit` | Auto-commit after each Spec-kit step |
 | `/speckit.git.validate` | Validate branch naming conventions |
 
-## 2.6 Key Benefits
+## 2.7 Key Benefits
 
 | Benefit | Description |
 |---|---|
@@ -117,4 +137,4 @@ Before proceeding to Module 3:
 
 ---
 
-[← Prerequisites](/Overview-Github-Spec-kit/modules/01-prerequisites/) | [Next: Specification →](/Overview-Github-Spec-kit/modules/03-specification/)
+[← Prerequisites](/Overview-Github-Spec-kit/modules/01-prerequisites/) | [Next: Constitution →](/Overview-Github-Spec-kit/modules/03-constitution/)

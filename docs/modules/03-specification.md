@@ -1,11 +1,11 @@
 ---
 layout: default
-title: 3. Specification
-nav_order: 4
-permalink: /modules/03-specification/
+title: 4. Specification
+nav_order: 5
+permalink: /modules/04-specification/
 ---
 
-# Module 3 — Specification
+# Module 4 — Specification
 {: .no_toc }
 
 Create a feature specification from a natural language description using `/speckit.specify` and refine it with `/speckit.clarify`.
@@ -155,4 +155,4 @@ Before proceeding to Module 4:
 
 ---
 
-[← Spec-kit Overview]({{ site.baseurl }}{% link modules/02-speckit-overview.md %}) | [Next: Planning →]({{ site.baseurl }}{% link modules/04-planning.md %})
+[← Constitution](/Overview-Github-Spec-kit/modules/03-constitution/) | [Next: Planning →](/Overview-Github-Spec-kit/modules/05-planning/)

@@ -139,4 +139,4 @@ Before proceeding to Module 2:
 
 ---
 
-[Next: Spec-kit Overview →]({{ site.baseurl }}{% link modules/02-speckit-overview.md %})
+[Next: Spec-kit Overview →](/Overview-Github-Spec-kit/modules/02-speckit-overview/)

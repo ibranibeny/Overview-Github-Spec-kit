@@ -1,11 +1,11 @@
 ---
 layout: default
-title: 7. Analysis & Review
-nav_order: 8
-permalink: /modules/07-analysis-review/
+title: 8. Analysis & Review
+nav_order: 9
+permalink: /modules/08-analysis-review/
 ---
 
-# Module 7 — Analysis & Review
+# Module 8 — Analysis & Review
 {: .no_toc }
 
 Validate cross-artifact consistency and quality using `/speckit.analyze`, then iterate on any findings.
@@ -151,4 +151,4 @@ Workshop completion:
 
 ---
 
-[← Implementation]({{ site.baseurl }}{% link modules/06-implementation.md %}) | [Back to Home]({{ site.baseurl }}/)
+[← Implementation](/Overview-Github-Spec-kit/modules/07-implementation/) | [Back to Home](/Overview-Github-Spec-kit/)

@@ -1,11 +1,11 @@
 ---
 layout: default
-title: 5. Task Generation
-nav_order: 6
-permalink: /modules/05-task-generation/
+title: 6. Task Generation
+nav_order: 7
+permalink: /modules/06-task-generation/
 ---
 
-# Module 5 — Task Generation
+# Module 6 — Task Generation
 {: .no_toc }
 
 Generate an actionable, dependency-ordered task list from the implementation plan using `/speckit.tasks`.
@@ -146,4 +146,4 @@ Before proceeding to Module 6:
 
 ---
 
-[← Planning]({{ site.baseurl }}{% link modules/04-planning.md %}) | [Next: Implementation →]({{ site.baseurl }}{% link modules/06-implementation.md %})
+[← Planning](/Overview-Github-Spec-kit/modules/05-planning/) | [Next: Implementation →](/Overview-Github-Spec-kit/modules/07-implementation/)

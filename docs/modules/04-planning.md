@@ -1,11 +1,11 @@
 ---
 layout: default
-title: 4. Planning
-nav_order: 5
-permalink: /modules/04-planning/
+title: 5. Planning
+nav_order: 6
+permalink: /modules/05-planning/
 ---
 
-# Module 4 — Planning
+# Module 5 — Planning
 {: .no_toc }
 
 Generate the implementation plan including architecture decisions, data models, API contracts, and project structure using `/speckit.plan`.
@@ -201,4 +201,4 @@ Before proceeding to Module 5:
 
 ---
 
-[← Specification]({{ site.baseurl }}{% link modules/03-specification.md %}) | [Next: Task Generation →]({{ site.baseurl }}{% link modules/05-task-generation.md %})
+[← Specification](/Overview-Github-Spec-kit/modules/04-specification/) | [Next: Task Generation →](/Overview-Github-Spec-kit/modules/06-task-generation/)

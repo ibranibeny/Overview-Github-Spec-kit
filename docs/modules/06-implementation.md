@@ -1,11 +1,11 @@
 ---
 layout: default
-title: 6. Implementation
-nav_order: 7
-permalink: /modules/06-implementation/
+title: 7. Implementation
+nav_order: 8
+permalink: /modules/07-implementation/
 ---
 
-# Module 6 — Implementation
+# Module 7 — Implementation
 {: .no_toc }
 
 Execute all tasks automatically using `/speckit.implement` — the AI-powered code generation engine that produces production-ready code from your task list.
@@ -180,4 +180,4 @@ Before proceeding to Module 7:
 
 ---
 
-[← Task Generation]({{ site.baseurl }}{% link modules/05-task-generation.md %}) | [Next: Analysis & Review →]({{ site.baseurl }}{% link modules/07-analysis-review.md %})
+[← Task Generation](/Overview-Github-Spec-kit/modules/06-task-generation/) | [Next: Analysis & Review →](/Overview-Github-Spec-kit/modules/08-analysis-review/)
