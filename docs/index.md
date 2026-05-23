@@ -59,11 +59,17 @@ flowchart LR
 
 ---
 
-## Example Business Case
+## What You'll Build
 
-This workshop demonstrates the Spec-kit workflow by building a complete **Azure Cost Monitoring Tool** — an internal dashboard that ingests daily cost data from the Azure Consumption API into PostgreSQL, serves aggregated views via a FastAPI backend, and displays interactive charts through a React frontend.
+A complete **Azure Cost Monitoring Tool** using the Spec-kit workflow, demonstrating:
 
-### Architecture at a Glance
+- **Feature Specification** — Transform a natural language description into a structured spec
+- **Automated Planning** — Generate architecture, data models, API contracts, and implementation plans
+- **Task Decomposition** — Break down complex features into dependency-ordered, executable tasks
+- **AI-Powered Implementation** — Execute all 88 tasks automatically with GitHub Copilot
+- **Quality Analysis** — Validate consistency across all generated artifacts
+
+## Architecture at a Glance
 
 | Component | Technology | Azure Resource |
 |---|---|---|
@@ -74,18 +80,6 @@ This workshop demonstrates the Spec-kit workflow by building a complete **Azure 
 | 🔐 Secrets | Key Vault | Standard |
 | 🌐 Networking | Hub-Spoke VNet | Azure Firewall |
 | 📊 Monitoring | Application Insights | Log Analytics |
-
-### What Gets Generated
-
-Using the Spec-kit pipeline, a single natural language description produces:
-
-- **88 implementation tasks** across 8 phases
-- **60+ source files** (~8,000 lines of code)
-- **Backend**: FastAPI with SQLAlchemy ORM, Alembic migrations, JWT auth
-- **Frontend**: React pages with TanStack Query, Recharts, responsive layout
-- **Infrastructure**: Azure CLI provisioning scripts (hub-spoke networking)
-- **Tests**: Unit tests (pytest, Vitest) and integration test scaffolding
-- **DevOps**: Dockerfile, docker-compose, CI/CD workflow
 
 ---
 
